@@ -6,10 +6,10 @@ import datetime
 import time
 
 print ("Connecting to DB")
-db = mysql.connector.connect(user='geolookup',password='Password1!',host='localhost',database='geolookup')
+db = mysql.connector.connect(user='geolookup',password='redacted',host='localhost',database='geolookup')
 cursor = db.cursor()
 
-Records="../Takeout/Location History/Records.json"
+Records="../Takeout/Location History/Records.json" # path to records.json file
 
 # for a complete record, we need timestamp, lat and lon
 # latitudeE7,longitudeE7,timestamp
